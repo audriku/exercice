@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #c26a3a
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #54260d;
+  font-family: 'Bree serif';
+  font-size: 5vw
+}
+
+nav {
+  background: #222;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+nav:hover {
+  background-color: #222;
+}
+h32{
+  text-align: center;
+  font-family: 'Bree Serif';
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover {
+  color: #683719
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 75px;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  padding: 15px 10px;
+  font-size: 16px;
+}
+
+.toggle {
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+.toggle.open span::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggle.open span::after {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.toggle.open span {
+  background: transparent;
+}
+
+.toggle span {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.toggle span::before,
+.toggle span::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.4s;
+  left: 0;
+}
+
+.toggle span::before {
+  top: -8px;
+}
+
+.toggle span::after {
+  top: 8px;
+}
+
+.dropbtn {
+  background-color: #222;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 0;
+  outline: none;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2b2b2b;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  width: 100%;
+  overflow: auto;
+  z-index: 1;
+  padding: 5px 20px
+}
+
+.content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.content a:hover {
+  background-color: #2b2b2b;
+}
+
+.show {
+  display: block;
+}
+.flag {
+  display: inline-block;
+}
+.lang-label {
+  display:  none;
+  color: white;
+}
+form {
+  padding: 12px 20px;
+  margin: 8px 0;
+  color: #752b0f;
+  font-size: 3.2vw;
+  line-height: 1.8;
+  font-family: "Ancizar Sans", sans-serif;
+}
+input
+{
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid #e7a17e;
+  border-radius: 4px;
+  font-size: 2vw;
+  background-color: #d4926c;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+  display: flex;
+}
+input:focus {
+  width: 100%;
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+y {
+  font-size: 2.25vw
+}
+input[type=submit] {
+  width: 20%;
+  transition: none;
+  color: #54260d;
+  font-size: 2.2vw;
+}
+table, th, td {
+  border: 1px solid #977136;
+  color: #fcbc5a;
+  text-align: center;
+}
+table {
+  width: 100%;
+}
+.dropbtn2 {
+  background-color: #54260d;
+  border: none;
+  color:  #fcbc5a;
+  font-size: 2.8vw;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.dessert{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #54260d
+}
+.content2 {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1.5s ease, opacity 0.4s ease;
+  background-color: #54260d;
+  padding: 8px 10px
+}
+.content2.show2 {
+  max-height: 10000px;
+  opacity: 1;
+}
+.dropbtn3 {
+  background-color: #54260d;
+  border: none;
+  color:  #fcbc5a;
+  font-size: 2.8vw;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.plats{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #54260d
+}
+.content3 {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1.5s ease, opacity 0.4s ease;
+  background-color: #54260d;
+  padding: 8px 10px
+}
+.content3.show3 {
+  max-height: 10000px;
+  opacity: 1;
+}
+.dropbtn4 {
+  background-color: #54260d;
+  border: none;
+  color:  #fcbc5a;
+  font-size: 2.8vw;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.biere{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #54260d
+}
+.content4 {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 1.5s ease, opacity 0.4s ease;
+  background-color: #54260d;
+  padding: 8px 10px
+}
+.content4.show4 {
+  max-height: 10000px;
+  opacity: 1;
+}
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #222;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+  }
+
+  .toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .flag {display: none;}
+  .lang-label {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+  }
+  .menu .dropdown {
+    width: 100%;
+  }
+
+  .menu .dropbtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 20px;
+  background: none;
+  color: white;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  text-align: left;
+}
+
+
+  .menu .dropbtn:hover {
+    color: #ef4b3f;
+  }
+  .dropdown {
+    width: 100%;
+  }
+   .dropbtn {
+    width: 100%;
+    padding: 15px 20px;
+    background: none;
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+    border: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .lang-label:hover {
+    color: #683719;
+  }
+  .menu .dropdown .dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    background: none;
+    color: white;
+    border: none;
+    font-family: inherit;
+    text-align: left;
+    line-height: 1.2;
+  }
+  .menu .dropdown .dropbtn img {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamburbur</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+    <ul class="logo">
+      <li>
+        <a href="accueil_en.html">
+          <img src="logo_en.png" alt="logo" />
+        </a>
+      </li>
+    </ul>
+
+    <ul class="menu">
+      <li><a href="about_en.html">About us</a></li>
+      <li><a href="locations_en.html">Our Locations</a></li>
+      <li><a href="contact_us_en.html">Contact us</a></li>
+      <li><a href="products_en.html">Our products</a></li>
+       <li class="dropdown">
+      <button onclick="Language()" class="dropbtn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1200px-Flag_of_Europe.svg.png" alt="" width="60" height="40" class="flag" />
+        <span class="lang-label">Language</span>
+      </button>
+      <div id="drop" class="content">
+        <a href="products_fr.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png" alt="" width="40" />
+        </a>
+        <a href="products_en.html">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/2560px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="" width="40" />
+        </a>
+      </div>
+    </li>
+    </ul>
+
+   
+
+    <div class="toggle" id="toggler">
+      <span></span>
+    </div>
+  </nav>
+
+ <h1>Our Products</h1>
+  <button onclick="Drop4()" class="dropbtn4">Beers   
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="drop4" class="content4">
+    <div class="biere"id="biere1">
+    <img src="biere1.jpg" alt="bir" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>Noon and midnight</td>
+     <td>16.5€</td>
+   </tr>
+ </table>
+   
+      </div>
+ <div class="biere" id="biere2">
+<img src="biere2.jpg" alt="beer" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>The 6 AM</td>
+     <td>8.5€</td>
+   </tr>
+ </table>
+</div>
+     <div class="biere" id="biere3">
+<img src="biere3.jpg" alt="brire" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>The 3.14 AM</td>
+     <td>8.5€</td>
+   </tr>
+ </table>
+</div>
+         <div class="biere" id="biere4">
+<img src="biere4.jpg" alt="brire" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>The 6 PM</td>
+     <td>7.5€</td>
+   </tr>
+ </table>
+</div>
+            <div class="biere" id="biere5">
+<img src="biere5.jpg" alt="brire" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>The 11 PM</td>
+     <td>6.5€</td>
+   </tr>
+ </table>
+</div>
+  </div>   
+  
+
+ <button onclick="Drop3()" class="dropbtn3">Main courses   
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="drop3" class="content3">
+    <div class="plats"id="plats1">
+    <img src="plat1.jpg" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>Caesar salad styled bread</td>
+     <td>16.5€</td>
+   </tr>
+ </table>
+   
+      </div>
+ <div class="plats" id="plats2">
+<img src="plat2.jpg" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>Smoked tandori Cantonese rice</td>
+     <td>16€</td>
+   </tr>
+ </table>
+</div>
+
+  </div>  
+
+
+  
+ <button onclick="Drop2()" class="dropbtn2">Desserts   
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="drop2" class="content2">
+    <div class="dessert"id="dessert1">
+    <img src="Dessert1.jpg" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>Dubaï sorbet with red berries</td>
+     <td>13€</td>
+   </tr>
+ </table>
+   
+      </div>
+ <div class="dessert" id="dessert2">
+<img src="Dessert2.jpg" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>Oreo waffled sorbet</td>
+     <td>12.5€</td>
+   </tr>
+ </table>
+</div>
+         <div class="plats" id="plats3">
+<img src="plat3.jpg" width="400"/>
+ <table>
+   <tr>
+     <th>Name</th>
+     <th>Price</th>
+   </tr>
+   <tr>
+     <td>Mannhein Spaggettieis with a chocolate topping</td>
+     <td>17€</td>
+   </tr>
+ </table>
+</div>
+  </div>
+
+  
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
